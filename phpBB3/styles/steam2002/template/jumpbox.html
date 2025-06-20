@@ -1,0 +1,18 @@
+<!-- IF S_DISPLAY_JUMPBOX -->
+<table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+<tr valign="bottom">
+    <td>
+        <form method="post" action="{S_JUMPBOX_ACTION}">
+        <font face="verdana,arial,helvetica" size="1"><b>Forum Jump:</b><br>
+        <select name="f" class="bginput">
+            <!-- BEGIN jumpbox_forums -->
+            <option value="{jumpbox_forums.FORUM_ID}"<!-- IF jumpbox_forums.S_SELECTED --> selected<!-- ENDIF -->><!-- BEGIN level -->&#8627;<!-- END level --> {jumpbox_forums.FORUM_NAME}</option>
+            <!-- END jumpbox_forums -->
+        </select>
+        <input type="submit" value="{L_GO}" class="bginput">
+        </font>
+        </form>
+    </td>
+</tr>
+</table>
+<!-- ENDIF -->

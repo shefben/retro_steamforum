@@ -1,0 +1,59 @@
+<!-- INCLUDE overall_header.html -->
+<!-- main post table -->
+<table bgcolor="#626d5c" width="800" cellpadding="10" cellspacing="0" border="0">
+<tr><td>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+        <td><img src="{T_THEME_PATH}/images/vb_bullet.gif" alt="" align="middle"> <font face="verdana, arial, helvetica" size="2"><b>{TOPIC_TITLE}</b></font></td>
+        <td align="right"><font face="verdana,arial,helvetica" size="1"><!-- IF not S_IS_BOT --><a href="{U_POST_REPLY_TOPIC}"><img src="{T_THEME_PATH}/images/reply.gif" alt="{L_POST_REPLY}"></a><!-- ENDIF --></font></td>
+</tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" border="0" bgcolor="3E4637" width="100%" align="center"><tr><td>
+<table cellpadding="4" cellspacing="1" border="0" width="100%">
+<tr bgcolor="#3E4637" id="cat">
+        <td width="175" align="center"><font face="verdana,arial,helvetica" size="1" color="#D8DED3"><b>Author</b></font></td>
+        <td align="center"><font face="verdana,arial,helvetica" size="1" color="#D8DED3"><b>Message</b></font></td>
+</tr>
+<!-- BEGIN postrow -->
+<tr valign="top" align="center">
+        <td bgcolor="#545F4E" width="175" nowrap>
+                <font face="verdana,arial,helvetica" size="2"><b>{postrow.POST_AUTHOR}</b></font><br>
+                <font face="verdana,arial,helvetica" size="1">{postrow.POST_DATE}</font><br>
+                <!-- IF postrow.POSTER_AVATAR -->{postrow.POSTER_AVATAR}<br><!-- ENDIF -->
+        </td>
+        <td bgcolor="#545F4E" align="left">
+                {postrow.MESSAGE}
+        </td>
+</tr>
+<!-- END postrow -->
+</table>
+</td></tr></table>
+
+<!-- thread options links -->
+<table cellpadding="0" cellspacing="0" border="0" bgcolor="3E4637" align="center"><tr><td>
+<table cellpadding="4" cellspacing="1" border="0" width="100%">
+<tr>
+    <td bgcolor="#545F4E" align="center"><font face="verdana,arial,helvetica" size="1">
+    <!-- IF U_PRINT_TOPIC -->
+    <img src="{T_THEME_PATH}/images/printer.gif" alt="" align="absmiddle">
+    <a href="{U_PRINT_TOPIC}">Show Printable Version</a><!-- IF U_EMAIL_TOPIC or U_WATCH_TOPIC --> | <!-- ENDIF -->
+    <!-- ENDIF -->
+    <!-- IF U_EMAIL_TOPIC -->
+    <img src="{T_THEME_PATH}/images/sendtofriend.gif" alt="" align="absmiddle">
+    <a href="{U_EMAIL_TOPIC}">Email this Page</a><!-- IF U_WATCH_TOPIC --> | <!-- ENDIF -->
+    <!-- ENDIF -->
+    <!-- IF U_WATCH_TOPIC -->
+    <img src="{T_THEME_PATH}/images/subscribe.gif" alt="" align="absmiddle">
+    <a href="{U_WATCH_TOPIC}">{S_WATCH_TOPIC_TITLE}</a>
+    <!-- ENDIF -->
+    </font></td>
+</tr>
+</table>
+</td></tr></table>
+<!-- /thread options links -->
+
+
+<!-- INCLUDE jumpbox.html -->
+</td></tr></table>
+<!-- INCLUDE overall_footer.html -->

@@ -1,0 +1,52 @@
+<!-- INCLUDE overall_header.html -->
+<!-- content table -->
+<table bgcolor="#626d5c" width="800" cellpadding="10" cellspacing="0" border="0">
+<tr><td>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+        <td><img src="{T_THEME_PATH}/images/vb_bullet.gif" alt="" align="middle"> <font face="verdana, arial, helvetica" size="2"><b>{FORUM_NAME}</b></font></td>
+        <td align="right"><font face="verdana,arial,helvetica" size="1"><!-- IF S_DISPLAY_POST_INFO --><a href="{U_POST_NEW_TOPIC}"><img src="{T_THEME_PATH}/images/newthread.gif" alt="{L_POST_NEW_TOPIC}"></a><!-- ENDIF --></font></td>
+</tr>
+</table>
+
+<!-- topic table -->
+<table cellpadding="0" cellspacing="0" border="0" bgcolor="3E4637" width="100%" align="center"><tr><td>
+<table cellpadding="4" cellspacing="1" border="0" width="100%">
+<tr bgcolor="#3E4637" id="cat" align="center">
+        <td bgcolor="#3E4637" align="center" nowrap colspan="3"><font face="verdana,arial,helvetica" size="1" color="#D8DED3"><b>Thread</b></font></td>
+        <td bgcolor="#3E4637" nowrap><font face="verdana,arial,helvetica" size="1" color="#D8DED3"><b>Thread Starter</b></font></td>
+        <td bgcolor="#3E4637" nowrap><font face="verdana,arial,helvetica" size="1" color="#D8DED3"><b>Replies</b></font></td>
+        <td bgcolor="#3E4637" nowrap><font face="verdana,arial,helvetica" size="1" color="#D8DED3"><b>Views</b></font></td>
+        <td bgcolor="#3E4637" align="center" nowrap><font face="verdana,arial,helvetica" size="1" color="#D8DED3"><b>Last Post</b></font></td>
+</tr>
+<!-- BEGIN topicrow -->
+<tr align="center">
+        <td bgcolor="#545F4E">{topicrow.TOPIC_FOLDER_IMG}</td>
+        <td bgcolor="#626d5c">&nbsp;</td>
+        <td bgcolor="#545F4E" align="left" width="70%"><font face="verdana, arial, helvetica" size="2"><a href="{topicrow.U_VIEW_TOPIC}">{topicrow.TOPIC_TITLE}</a></font></td>
+        <td bgcolor="#626d5c" width="30%" nowrap><font face="verdana, arial, helvetica" size="2">{topicrow.TOPIC_AUTHOR_FULL}</font></td>
+        <td bgcolor="#545F4E"><font face="verdana, arial, helvetica" size="2">{topicrow.REPLIES}</font></td>
+        <td bgcolor="#626d5c"><font face="verdana, arial, helvetica" size="2">{topicrow.VIEWS}</font></td>
+        <td bgcolor="#626d5c"><font face="verdana,arial,helvetica" size="1">{topicrow.LAST_POST_TIME}<br>{L_POST_BY_AUTHOR} <a href="{topicrow.U_LAST_POSTER}"><b>{topicrow.LAST_POSTER_FULL}</b></a></font></td>
+</tr>
+<!-- END topicrow -->
+</table>
+</td></tr></table>
+
+<!-- icons -->
+<table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+<tr><td align="center">
+        <img src="{T_THEME_PATH}/images/on.gif" alt="On" align="absmiddle">
+        <b><font face="verdana,arial,helvetica" size="1">New posts</font></b>
+        &nbsp;&nbsp;
+        <img src="{T_THEME_PATH}/images/off.gif" alt="Off" align="absmiddle">
+        <b><font face="verdana,arial,helvetica" size="1">No new posts</font></b>
+        &nbsp;&nbsp;
+        <img src="{T_THEME_PATH}/images/offlock.gif" alt="Closed Forum" align="absmiddle">
+        <b><font face="verdana,arial,helvetica" size="1">A closed forum</font></b>
+</td></tr></table>
+
+<!-- INCLUDE jumpbox.html -->
+
+</td></tr></table>
+<!-- INCLUDE overall_footer.html -->
