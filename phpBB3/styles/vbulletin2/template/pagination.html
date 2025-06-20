@@ -1,0 +1,15 @@
+<span class="pagination">
+<!-- BEGIN pagination -->
+    <!-- IF pagination.S_IS_PREV -->
+        <a href="{pagination.PAGE_URL}"><img src="data:image/gif;base64,R0lGODlhBgAJAJEDAP/3mf///wAAAAAAACH5BAEAAAMALAAAAAAGAAkAAAIRnCeHkBspQGBxPsdMbYujUQAAOw==" alt="{L_PREVIOUS}" /></a>
+    <!-- ELSEIF pagination.S_IS_NEXT -->
+        <a href="{pagination.PAGE_URL}"><img src="data:image/gif;base64,R0lGODlhBgAJAJEDAP/3mf///wAAAAAAACH5BAEAAAMALAAAAAAGAAkAAAIRnIYGhxLbwDtOLmHpjKylUQAAOw==" alt="{L_NEXT}" /></a>
+    <!-- ELSEIF pagination.S_IS_CURRENT -->
+        <strong>{pagination.PAGE_NUMBER}</strong>
+    <!-- ELSEIF pagination.S_IS_ELLIPSIS -->
+        <img src="data:image/gif;base64,R0lGODlhCgAMAJEDAP/////3mQAAAAAAACH5BAEAAAMALAAAAAAKAAwAAAIj3IRpJhCODnovidAovBdMzzkixlXdlI2oZpJWEsSywLzRUAAAOw==" alt="..." />
+    <!-- ELSE -->
+        <a href="{pagination.PAGE_URL}">{pagination.PAGE_NUMBER}</a>
+    <!-- ENDIF -->
+<!-- END pagination -->
+</span>

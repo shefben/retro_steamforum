@@ -1,0 +1,182 @@
+html, body {
+    color: #000000;
+    background-color: #626d5c;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    scrollbar-base-color: #4C5844;
+    scrollbar-arrow-color: #969F8E;
+    font-size: 12px;
+}
+
+a { color: #C4CABE; }
+a:hover { color: #FFFFFF; }
+
+select {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #969F8E;
+    background-color: #CFCFCF;
+}
+
+textarea,
+.bginput {
+    font-size: 12px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+    background-color: #CFCFCF;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+    font-size: 12px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+    background-color: #CFCFCF;
+}
+
+.headerbar, .forumbg {
+    background-color: #4C5844;
+    background-image: none;
+    background-repeat: repeat-x;
+}
+
+.bg1 { background-color: #626d5c; }
+.bg2 { background-color: #545F4E; }
+.bg3 { background-color: #3E4637; color: #D8DED3; }
+
+.forabg {
+    background-color: #4C5844;
+    background-image: none;
+    background-repeat: repeat-x;
+}
+
+.navbar {
+    background-color: #CFCFCF;
+}
+
+table.table1 {
+    background-color: #4C5844;
+    border-color: #282E22;
+}
+
+table.table1 thead th {
+    background-color: #3E4637;
+    color: #D8DED3;
+    border-color: #282E22;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+table.table1 thead th a {
+    color: #B4BA50;
+    text-decoration: none;
+}
+
+table.table1 tbody td {
+    border-color: #282E22;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 4px;
+}
+
+#vb-nav {
+    background-color: #626d5c;
+    text-align: center;
+    padding: 4px 0;
+}
+
+#vb-nav img {
+    margin: 0 2px;
+    border: 0;
+}
+
+.forum_unread,
+.topic_unread {
+    background-image: url("data:image/gif;base64,R0lGODlhDwAPANU/AP/6vcfFtf/++r+9qFxcWGlpaL+7i7+7hL++t//4rP76z//82v/5tBkZFAQEA//97f/80U9OQkxMS//+9P/95P/70VJST//3otzaxZSRbkBAQD49M7m3lxAQC8rGlmloXvr453VzYL+6e3h3Z///++7rzGlnUmhnXZaVjb+8nZ6dj0BAPf/6x//83f/71bOzs+7t5J+dfH17ZkNCNP/7wYaGg05MNevlonV1cP/7x7+5dr+6dv/4pP///wAAAAAAACH5BAEAAD8ALAAAAAAPAA8AAAaXwJ9vSCwShb2ksvfSFJRDkkAgJZEKPgkVMaxZvgTYZOXDTSbcbDEAavhUj0ca9Tm5VRiHL0ChDIYUCwsRPiMcPg0lgn8+LRUQIT4RMj4bCo8pQy45OTGIMz4mnCyZPgoAAB56ehmoAAZDOQwMN25DBrMMB0M0Cb42HR0NN74Juz4APMrLzDwiQxc60js6O9bU1T5CRtzaQQA7");
+}
+
+.forum_read,
+.forum_read_locked,
+.topic_read,
+.topic_read_locked {
+    background-image: url("data:image/gif;base64,R0lGODlhDwAPAMQAAAAAAP///8nRwqevoHiAcVpiU05WRxEZCjU9LjtDNENLPFJaS15mV2dvYG11ZnR8bX2FdoSMfY+XiJefkJKai52llqCombK6q8LKu7zEtcfPwNbez9HZytzk1QQIAP///yH5BAEAAB8ALAAAAAAPAA8AAAWX4AeMZEmKl6BqAlclDKddo6ximMAAyhyNBIVBiNkgAA3MBTJSlAadAyCSGRBGkUJBGsGMBhfLY4TJbJyOCuBQnThG4UyDN0dkKpI5YCAZ/A5HBRcUEXoWERUVHgCLBH4ROwAVEBQDUiMSExAQBSMTDxAvHgcHExEED50AFA4PEZUDFacODgsjDQYGC1paCwu5BgAiJsTCIQA7");
+}
+
+.forum_unread_locked,
+.topic_unread_locked {
+    background-image: url("data:image/gif;base64,R0lGODlhDwAPAMQAAAAAAP///8zMzJmZmWZmZjMzM8HMu0xXRk9aSVNeTVtmVWNuXWhzYmx3ZnJ9bHuGdYaRgI2Yh5SfjpqllKGsm6izorK9rK65qLfCsbvGtRwbGykoKNjX13BwcExMTP///yH5BAEAAB8ALAAAAAAPAA8AAAV14AeMZEmKl6GurHGNRlWZo/yMmQwQhFcUANsIQ6HsSMDiDWCZTI5PoNMxukhoJEmjFgEIOAHBYEAARBgjCgSgKXg6A88GAFmkb1+OmAx4KEYSN20JcHJ9fwASVF9hY2UOCSMRW1gADQgjDAebnJ2bACKVJR8hADs=");
+}
+.forum_read_hot,
+.topic_read_hot {
+    background-image: url("data:image/gif;base64,R0lGODlhEAAQALMAAAAAAP///8POvbO+ra+6qXR/boWQf5eikaeyof///wAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAkALAAAAAAQABAAAARXMMlJqwQT5325Tl8HiqFlZkCqrioovHD8DoMqxwNB2ABM07rdISWo/XI6BOAwBPwABASCOWQaUjTl0nC4AgzgVHQ5DJsLKWU3/DUU0OjU+k2vp0Cs/D0CADs=");
+}
+.forum_unread_hot,
+.topic_unread_hot {
+    background-image: url("data:image/gif;base64,R0lGODlhEAAQANUyAN3d3bu7ru9gAP95H/+UTf9qB7JHAP+HN9hWAPhjAP91GYk3AP9nAalEALZJAP9nAv+DMT8+PLRIAP9rCPViAK1FAJo+AP+CLv9pBdtYALxLAP9oBLhKAP+PRf9mAP+XUf+YVJc8AP+SStlXAPxlAP+OQv+JO/9/Kv96IYs4AP+GNv+SSblKALpKAN3d0JWVlf//8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADIALAAAAAAQABAAAAaNQJlwGCsOj8jYxJOIIZPFqNRJjMGuWCxVFmNYX64XLHx1TqMuV2ANM2fLr1exzI1kXTF5uS29hucAAG0XRSBFYHgwgXIrKEUfBCIxiTBxMQQQD0UmBzGdeXIxHTEFGUUDCjEDAydFJSqpCA5FJDECtwkYBRsUCBoxFkUjMS0GFQYsHBINIQsxKWZn0jJBADs=");
+}
+.forum_read_locked,
+.topic_read_locked {
+    background-image: url("data:image/gif;base64,R0lGODlhEAAQAMQAAAAAAP///8zMzJmZmTMzM8POvXR/bl5eXlNTU0ZFRTs6OicpKhITE8LC2mZra3F8a3iDcoGMe4iTgpCbipijkqu2pbrFtLS/rsLNvMDLur7JuMjTwsbRwKOloIqJif///yH5BAEAAB8ALAAAAAAQABAAAAV04CeOZGmeaKqKSKIQi3ogQ70wIqDvwDG4hAEOUOBsjhuOL9EILnaFKAZzmAFvDEBGq7FYDoKAoONxILJdgOVyqbZeWDUbUOmAxWRz9lKp6CZuVwxZfQAUEz1hY2VndIYTEhGBcIN/kRAGmZkPnDofPKCgHyEAOw==");
+}
+
+.panel {
+    background-color: #3E4637;
+    color: #D8DED3;
+    border: 1px solid #282E22;
+}
+
+.error {
+    color: #C4B550;
+}
+
+.errorbox, div.rules {
+    background-color: #3E4637;
+    color: #D8DED3;
+    border: 1px solid #282E22;
+}
+
+#cat a {
+    color: #B4BA50;
+    text-decoration: none;
+}
+#cat a:hover {
+    color: #B4BA50;
+    text-decoration: underline;
+}
+
+#ltlink a {
+    color: #C4CABE;
+    text-decoration: none;
+}
+#ltlink a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.thtcolor {
+    color: #D8DED3;
+}
+
+blockquote,
+.codebox {
+    border: 1px solid #282E22;
+    background-color: #545F4E;
+    padding: 5px;
+}
+
+.lastpost a {
+    background-image: url("data:image/gif;base64,R0lGODlhDgAOAMQAAAAAAP/////3mcHMu665qKu2paq1pKWwn3N+bW14Z0xXRlBbSlhjUl9qWWVwX2hzYmt2ZXB7anaBcHqFdIGMe36JeI+aiZWgj5mkk5+qmbC7qq+6qbrFtLbBsL/Kuf///yH5BAEAAB8ALAAAAAAOAA4AAAVh4PcBZGkCIjCsbLuRXmHMpFHcFckd/AEQgN6E1DkJgJmMhKT5EQiCKBATIRV+0ewRACH5oNoowEHKYMMASoOEMQoAkwmDdEHYET/AfQ6wJP4JJIAJCyQPCoiJiigjJyciIQA7");
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 13px;
+}
+
+.breadcrumbs li + li:before {
+    content: url("data:image/gif;base64,R0lGODlhDwAPAMQAAAAAAP/////3mcPLvG52Z05WR2pqdCUtHjE5KjtDNE1VRlRcTVtjVGNrXGpyY3R8bZKai5ujlKevoLC4qcDIubnBssrSw3yEdIyRe/72mfbule3mkeHajM3Hg8S/gP///yH5BAEAAB8ALAAAAAAPAA8AAAWS4AeMZEmK06CuTnsN00hJNH0xmpVM13glQODiIqgkJD2AgcPkYBAYQQSBHBk0gqwn4RE8FJHHqMFgPAScBEewIEAII0mjgdhoHJlN4gJxxDFPHQISGR1QGA0jERcXBxECWBEHjIkAixcIRFmYjAwjEA8PBQsbpQsKoQufBKwHrq6sBAUjDgW2CrgKtrsAIia/vSEAOw==");
+    padding: 0 4px;
+}
+
+/* fixed width wrapper like the classic forum */
+#wrap {
+    width: 800px;
+    margin: 0 auto;
+}

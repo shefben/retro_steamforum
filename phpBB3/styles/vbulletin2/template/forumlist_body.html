@@ -1,0 +1,15 @@
+<table class="table1" cellspacing="1" cellpadding="4" width="100%">
+<!-- BEGIN forumrow -->
+<!-- IF forumrow.S_IS_CAT -->
+    <tr class="bg3" id="cat"><td colspan="5"><a href="{forumrow.U_VIEWFORUM}">{forumrow.FORUM_NAME}</a><br /><span class="small">{forumrow.FORUM_DESC}</span></td></tr>
+<!-- ELSE -->
+    <tr class="<!-- IF forumrow.S_ROW_COUNT is odd -->bg1<!-- ELSE -->bg2<!-- ENDIF -->">
+        <td width="5%" align="center">{forumrow.FORUM_FOLDER_IMG}</td>
+        <td width="55%"><a href="{forumrow.U_VIEWFORUM}"><strong>{forumrow.FORUM_NAME}</strong></a><br />{forumrow.FORUM_DESC}</td>
+        <td width="10%" align="center">{forumrow.TOPICS}</td>
+        <td width="10%" align="center">{forumrow.POSTS}</td>
+        <td width="20%" class="lastpost">{forumrow.LAST_POST_TIME} <a href="{forumrow.U_LAST_POST}" title="{L_GOTO_LAST_POST}">&nbsp;</a></td>
+    </tr>
+<!-- ENDIF -->
+<!-- END forumrow -->
+</table>

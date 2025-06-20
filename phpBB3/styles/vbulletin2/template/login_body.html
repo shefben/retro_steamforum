@@ -1,0 +1,37 @@
+<!-- INCLUDE overall_header.html -->
+<h2 class="login-title">{L_LOGIN}</h2>
+<form action="{S_LOGIN_ACTION}" method="post">
+<table class="table1" cellspacing="1" cellpadding="4" width="100%">
+<tr class="bg3">
+    <td colspan="2"><!-- IF LOGIN_EXPLAIN -->{LOGIN_EXPLAIN}<!-- ENDIF --></td>
+</tr>
+<tr class="bg1">
+    <td width="30%"><label for="{USERNAME_CREDENTIAL}">{L_USERNAME}{L_COLON}</label></td>
+    <td><input type="text" name="{USERNAME_CREDENTIAL}" id="{USERNAME_CREDENTIAL}" size="25" class="inputbox" value="{USERNAME}" /></td>
+</tr>
+<tr class="bg2">
+    <td><label for="{PASSWORD_CREDENTIAL}">{L_PASSWORD}{L_COLON}</label></td>
+    <td><input type="password" name="{PASSWORD_CREDENTIAL}" id="{PASSWORD_CREDENTIAL}" size="25" class="inputbox" /></td>
+</tr>
+<tr class="bg1">
+    <td colspan="2" align="center">
+        <!-- IF S_AUTOLOGIN_ENABLED --><label><input type="checkbox" name="autologin" /> {L_LOG_ME_IN}</label>&nbsp;<!-- ENDIF -->
+        <label><input type="checkbox" name="viewonline" /> {L_HIDE_ME}</label>
+    </td>
+</tr>
+<tr class="bg2">
+    <td colspan="2" align="center">
+        {S_HIDDEN_FIELDS}
+        {S_LOGIN_REDIRECT}
+        {S_FORM_TOKEN_LOGIN}
+        <input type="submit" name="login" value="{L_LOGIN}" class="button1" />
+    </td>
+</tr>
+</table>
+</form>
+<!-- IF not S_ADMIN_AUTH and S_REGISTER_ENABLED -->
+<div class="panel" style="text-align:center; margin-top:10px;">
+    <a href="{U_REGISTER}"><img src="data:image/gif;base64,R0lGODlhNQAZAKIEAIGNfSM1Kb+6UExYRP///wAAAAAAAAAAACH5BAEAAAQALAAAAAA1ABkAAAOPSLrc/jDKSaslIOvNu/+gFwBDaZ5oqq5sOrZwLKPvbN80iQq8YPs4Ve0EHBSDpWNsaCo6j71kk2eMVpvGEzNpzXqBYCkR+1Vus1Br2HsVV6ls03kd/7rFzp1LN3Z31VxpgXclZzdKSFp8OHCJQouOkVoBlJWWl5iZmpuaF56foKGio6SlpqeoqaqrrK2uBAkAOw==" alt="{L_REGISTER}" /></a>
+</div>
+<!-- ENDIF -->
+<!-- INCLUDE overall_footer.html -->
