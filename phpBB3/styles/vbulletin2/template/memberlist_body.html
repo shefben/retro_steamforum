@@ -1,0 +1,21 @@
+<!-- INCLUDE overall_header.html -->
+<h2 class="memberlist-title">{PAGE_TITLE}</h2>
+<table class="table1" cellspacing="1" cellpadding="4" width="100%">
+<thead>
+<tr class="bg3">
+    <th>{L_USERNAME}</th>
+    <th width="20%">{L_JOINED}</th>
+    <th width="10%">{L_POSTS}</th>
+</tr>
+</thead>
+<tbody>
+<!-- BEGIN memberrow -->
+<tr class="<!-- IF memberrow.S_ROW_COUNT is odd -->bg1<!-- ELSE -->bg2<!-- ENDIF -->">
+    <td><a href="{memberrow.U_VIEW_PROFILE}">{memberrow.USERNAME}</a></td>
+    <td>{memberrow.JOINED}</td>
+    <td align="center">{memberrow.POSTS}</td>
+</tr>
+<!-- END memberrow -->
+</tbody>
+</table>
+<!-- INCLUDE overall_footer.html -->

@@ -1,0 +1,30 @@
+<!-- INCLUDE overall_header.html -->
+<h2 class="forum-title"><a href="{U_VIEW_FORUM}">{FORUM_NAME}</a></h2>
+<div class="post-buttons" style="text-align: right;">
+    <!-- IF S_DISPLAY_POST_BUTTON -->
+    <a href="{U_POST_NEW_TOPIC}"><img src="data:image/gif;base64,R0lGODlhagAWAMQAAAAAAP/////3mcHMu6y3pqm0o6Wwn6Crmm14Z2p1ZGl0Y0xXRicyITA7KjxHNkNOPVBbSlZhUF1oV2NuXXmEc4KNfIyXhpOejZumlaKtnLXAr8/ayd7p2Ov25bS0tP///yH5BAEAAB8ALAAAAABqABYAAAX/4CeOZGmeaKqubOueQCzPb23fuBoLAe8Hs6BwSCwaj8ikzBQbAHpQH0AAcFYH2Kx2y+16v+CwOAsgXQlToIw3CwAJ8Lh8Tq/b7/i8Pl4pi6oFBU8/hE9uQIGJiouMjY6JBhcUFRiPlpeRk5UFFH4AGhkGBmlEh0AIoqmqq6ytrBYSEBQYFg8KEhOuuruptbe5Bp1/GgfFg1CGhm4ACMXOz9DR0tILFRbVCAoBAw3T3t/O2dvdB8IfnxjppDGmhwAJ6RgVEA8LDQ3VGBcK9/gVFAsgWFOwQMG/gJRoNRgQgF8DbdzuSbBQIcKCCREiWIPQb2IFe/0SXJAHEmKDdAg8/xG4wPKYAA/KlilgybKBBQsRCgyo0IBCg5xYeC64iW+ChQn4bj5gOWEChwAFjk7YRkGDhgkPHlhbQMHCvaoDrjZwUEEDFgwWfVY4O45lyj8FaK4DANMdgQk0LzRoFwDp1A4DOgTwKtjehgAaGlRA3IAlBAumjrbr4GBhgKcBbF5m2HchhwFPKZ90A7rthQSeot502aMuXQATb3p1Y0/D4AaHI+C73KBAgIoBBDvwXcHBTZ8MkTaYusGBg6dIGWJo6uBy5cUFGNhz4LRv9QC6p3K7qcBThgro58aA6YGKBPToGbhhwACyBfl8GSCAimFwAASHOYAAfAwkBwEE4tGXXP+BfTHAHV8DMFABZm40tY12CaI3gXnwseZDe0BoROB89Q3GgGAITIDLBPRdxkFziCEmIYELMpAggywaiNFlKjYVwQM8MohLABvQl2EFEniCAQVMqidDDwBEwCST+NFnHwP9DYDARBzQZ9tvDHzp1ZQUMGiABGheKKSQXDFw2JkSXKCBBJchgMBTEpw4mAQGXMhkkn8s2WQUhLIhy5RVGgdmA30e0qUDFLjhAAORBuCAlFMKeAgsajKUp6dS1sOZGwYwSCSelAoWY4RMRuDJBXamhMQCsSKwAH0P5EmfBBEw0ACak15En4O6OlhrNr6i2cCwEPTq662+KoBAAg8QK8GSssFC62uvv05KHwR2uvoHrLEuYO656J57bAK1smtnAhKYG4G0x9a7brwLSLBurO7WqoBF+dr5bwQTtBvLvP1C4Mc5pymgQAIORyxxxBBTDHHFCWQ8ccYaP8zxxRw7/PHFElcssscPe4zxyRubnLG5C5+T7sw012zzzTjnrPPO58bAhBJABy300ELnYPTRSCf9QQgAOw==" alt="{L_POST_NEW_TOPIC}" /></a>
+    <!-- ENDIF -->
+</div>
+<table class="table1" cellspacing="1" cellpadding="4" width="100%">
+<thead>
+<tr class="bg3">
+    <th width="5%">&nbsp;</th>
+    <th>{L_TOPICS}</th>
+    <th width="10%">{L_REPLIES}</th>
+    <th width="10%">{L_VIEWS}</th>
+    <th width="20%">{L_LAST_POST}</th>
+</tr>
+</thead>
+<tbody>
+<!-- BEGIN topicrow -->
+<tr class="<!-- IF topicrow.S_ROW_COUNT is odd -->bg1<!-- ELSE -->bg2<!-- ENDIF -->">
+    <td align="center">{topicrow.TOPIC_FOLDER_IMG}</td>
+    <td><a href="{topicrow.U_VIEW_TOPIC}" class="topictitle">{topicrow.TOPIC_TITLE}</a></td>
+    <td align="center">{topicrow.REPLIES}</td>
+    <td align="center">{topicrow.VIEWS}</td>
+    <td class="lastpost">{topicrow.LAST_POST_TIME} <a href="{topicrow.U_LAST_POST}" title="{L_GOTO_LAST_POST}">&nbsp;</a></td>
+</tr>
+<!-- END topicrow -->
+</tbody>
+</table>
+<!-- INCLUDE overall_footer.html -->

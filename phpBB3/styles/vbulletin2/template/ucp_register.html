@@ -1,0 +1,32 @@
+<!-- INCLUDE overall_header.html -->
+<h2 class="register-title">{L_REGISTRATION}</h2>
+<form id="register" method="post" action="{S_UCP_ACTION}"{S_FORM_ENCTYPE}>
+<table class="table1" cellspacing="1" cellpadding="4" width="100%">
+<tr class="bg3">
+    <td colspan="2">{L_ITEMS_REQUIRED}</td>
+</tr>
+<tr class="bg1">
+    <td width="40%"><label for="username">{L_USERNAME}{L_COLON}</label></td>
+    <td><input type="text" name="username" id="username" size="25" class="inputbox" value="{USERNAME}" /></td>
+</tr>
+<tr class="bg2">
+    <td><label for="new_password">{L_PASSWORD}{L_COLON}</label></td>
+    <td><input type="password" name="new_password" id="new_password" size="25" class="inputbox" /></td>
+</tr>
+<tr class="bg1">
+    <td><label for="password_confirm">{L_CONFIRM_PASSWORD}{L_COLON}</label></td>
+    <td><input type="password" name="password_confirm" id="password_confirm" size="25" class="inputbox" /></td>
+</tr>
+<tr class="bg2">
+    <td><label for="email">{L_EMAIL_ADDRESS}{L_COLON}</label></td>
+    <td><input type="email" name="email" id="email" size="25" value="{EMAIL}" class="inputbox" /></td>
+</tr>
+<tr class="bg1">
+    <td colspan="2" align="center">
+        {S_HIDDEN_FIELDS}
+        <input type="submit" name="submit" value="{L_SUBMIT}" class="button1" />
+    </td>
+</tr>
+</table>
+</form>
+<!-- INCLUDE overall_footer.html -->
